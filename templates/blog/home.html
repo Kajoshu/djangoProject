@@ -1,0 +1,9 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for post in posts %}
+        <h1>{{ post.customer }}</h1>
+        <p> {{ post.item }}</p>
+        <p>{{ post.amount }}</p>
+        <p>{{ post.balance }}</p>
+    {% endfor %}
+{% endblock content %}
